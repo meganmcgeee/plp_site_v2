@@ -6,111 +6,30 @@
 
 /* Top Navigation */
 
-// Center Navbar Links
-.navbar{
- padding: 3rem 1rem !important;
-}
-.navbar-nav {
-  width: 100%;
-  text-align: center;
-  > li {
-    float: none;
-    display: inline-block;
-  }
-}
-
-*{border-radius:0px!important; -moz-border-radius:0px!important; -webkit-border-radius:0px!important; border:none!important }
-/*Override BS*/
-.navbar-nav > li {
-    padding-top: 0px!important;
-    padding-bottom: 0px!important;
-}
-.navbar-brand,
-.navbar-nav li a {
-    line-height: 150px;
-    height: 150px;
-    padding-top: 0;
-}
-.navbar-default .navbar-nav > li > a, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus{padding-top:30px!important;padding-bottom:40px}
-body{background:#1C75BC}
-
-.navbar-default {
-background-color: #1C75BC;
-border-color: none;
-}
-
-.navbar-nav > li{
-  padding-top:30px; 
-  padding-bottom: 30px;
-}
-a{
-    color: #ffffff!important;
-}
-
-.navbar-nav {
-text-align: center;
-display: table;
-float: none;
-margin: 0 auto;
-table-layout: fixed;
-}
-
-.navbar-nav > li:after {
-content: " •";
-color: #fff;
-float: right;
-display: block;
-z-index: 999;
-position: relative;
-font-size: 20px;
-margin-top: -63px;
-margin-right: -4px;
-}
-
-.navbar-nav > li:last-child:after{content:"";}
-
-@media (max-width: 767px) {
- .navbar-nav > li:after{content: ""!important}
-}
-
-.nav-item{
-  text-align: center;s
-  padding-left: 2em;
-  padding-right: 2em;
-}
-
-
-
 /* Splash Hero */
 
 /* Image Responsivity  */
 
 .splash-hero{
   text-align: center;
-  height: 70%;
-  padding: 3em;
+  height: 90%;
+  padding-top: 4em;
   background: url("../img/plp_bg_splash.svg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   
-  #logo{
-    width: 30%;
-  }
-  #tumble{
-    width: 10%;
-  }
 }
 .splash-hero img {
-    width: 20%;
     height: auto;
     z-index: 3;
+    // width: 30%;
     // background-color: #fff;
   }
 
   .splash-hero svg{
-    width: 40%;
+    width: 50%;
   }
 
   .social-media{
