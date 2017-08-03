@@ -31,39 +31,47 @@
 
     <!-- Full photo background  -->
     <!--Navigation Bar  -->
-     <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <ul class="nav navbar-nav ">
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="past.html">PAST EVENTS</a></li>
-          <li><a href="services.html">UPCOMING EVENTS</a></li>
-          <li><a href="upcoming.html">SERVICES</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </nav> 
+      <nav class="navbar navbar-default navbar-toggleable-md navbar-fixed-top navbar-custom">
+        <div class="container-fluid">
+            <div class="nav-collapse">
+              <ul class="nav navbar-nav ">
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="past.html">PAST EVENTS</a></li>
+                <li><a href="services.html">UPCOMING EVENTS</a></li>
+                <li><a href="upcoming.html">SERVICES</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+              </ul>
+            </div>
+          </div> 
+       </nav>    
 
     <!--Splash Hero-->
       <div class="row">
        <div class="splash-hero">
-        <img id="rough" src="./img/rough-blue-outline.png" alt="">
-        <!-- <svg id="logo"
-             style="vertical-align:top;"  
-             data-name="logo" 
-             xmlns="http://www.w3.org/2000/svg" 
-             xmlns:xlink="http://www.w3.org/1999/xlink" 
-             viewBox="0 0 792 612">
-             <defs><style>.cls-1{fill:none;}.cls-2{clip-path:url(#clip-path);}</style>
-              <clipPath id="clip-path" 
-                        transform="translate(114.96 213.62)">
-                        <rect class="cls-1" width="743.04" height="386.38"/></clipPath></defs><title>plp_white_logo</title><g class="cls-2"><image width="792" height="612" xlink:href="data:image/png;base64,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AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAC35HwEGAGrlbWv/8X6eAAAAAElFTkSuQmCC"/></g></svg> -->
-       
-        <!-- <div id="learn-more"></div>       -->
-     
-        <img id="tumble" src="./img/tumble-blue-outline.png" alt="">
+         <div class="container">
+            <img id="rough" src="./img/rough-blue-outline.png" alt="">
+          </div>
+          <div class="container">
+            <img id="logo" src="./img/plp_white_logo.png" alt="">
+          </div>
+          <div class="container">
+            <img id="tumble" src="./img/tumble-blue-outline.png" alt="">
+          </div>
       </div> 
     </div>
     <!-- Slanted Social Media Bar -->
+    <div class="row">
+      <svg viewBox="50 0 150 40">
+        <filter id="dropshadow" height="100%">
+        <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+        </filter>
+        <polygon points="0,0 300,20 0,1000 0,500" fill="#1C75BC" filter="url(#dropshadow)"/>
+          <text fill="white" x="8" y="25" font-size="4">Social Media goes in hurr</text>
+      </svg>
+    </div>
+    
+    <!--Party BG  -->
+     <img id="party-bg" src="./img/party-bg.png" class="thumbnail img-responsive">
       
 
       <!-- <div class="social-media">
@@ -72,24 +80,23 @@
         <i class="fa fa-facebook" aria-hidden="true"></i>
         <i class="fa fa-twitch" aria-hidden="true"></i>
       </div> -->
-    <!-- Slanted Social Media Bar SVG-->
+    <!-- Copany Description-->
     <div class="row">
       <svg viewBox="0 0 200 50">
         <filter id="dropshadow" height="100%">
         <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
       </filter>
-      <polygon points="0,0 0,100 0,45 700,0" fill="#1C75BC" filter="url(#dropshadow)"/>
+      <polygon points="0,0 0,100 0,45 600,0" fill="#1C75BC" filter="url(#dropshadow)"/>
         <text fill="white" x="8" y="25" font-size="4">We make pop-culture fan events and brand experiences fantastic and fan-nomenal.Check out our events.
         </text>
       </svg>
     </div>
     <!-- Company Description Bar  -->
-    <!-- <p>Power Level Productions is an events production strategy firm for pop culture media. </p> -->
+   
     <div class="row">
       <svg viewBox="0 0 200 50">
         <filter id="dropshadow" height="100%">
         <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
-
         </filter>
         <polygon points="0,0 200,20 0,3000 0,500" fill="#1C75BC" filter="url(#dropshadow)"/>
           <text fill="white" x="8" y="25" font-size="4">Power Level Productions is an events production strategy firm for pop culture media.</text>
@@ -125,8 +132,12 @@
         <text fill="white" x="8" y="25" font-size="4">We make pop-culture fan events and brand experiences fantastic and fan-nomenal.Check out our events.
         </text>
       </svg>
+      <!--Lightning BG  -->
+      <div class="container">
+        <img id="lightning-bg" src="./img/bolt-bg.jpg" class="thumbnail img-responsive"></div>
+      </div>
 
     <!-- Footer  -->
-
+<!--How to add a sticky footer here: http://getbootstrap.com/examples/sticky-footer-navbar/  -->
   </body>
 </html>

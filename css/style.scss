@@ -9,28 +9,41 @@
 /* Splash Hero */
 
 /* Image Responsivity  */
+.splash-hero img{
+  // width: 100%;
+  max-width: 100%;
+}
 
 .splash-hero{
-  text-align: center;
-  height: 90%;
-  padding-top: 4em;
+  // text-align: center;
+  // height: 90%;
+  padding-bottom: 5em;
   background: url("../img/plp_bg_splash.svg") no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  
 }
-.splash-hero img {
-    height: auto;
-    z-index: 3;
-    // width: 30%;
-    // background-color: #fff;
-  }
 
-  .splash-hero svg{
-    width: 50%;
-  }
+#logo{
+  z-index: 1;
+  position: absolute;
+  padding-left: 15%;
+  display: block;
+  padding: 3em;
+}
+#rough{
+  position: absolute;
+  padding-top: 5%;
+  display: block;
+  // width: 100%;
+  // max-width: 100%;
+  // width: 100%;
+}
+#tumble{
+  padding-left: 70%;
+  padding-top: 5%;
+}
 
   .social-media{
     font-size: 4em;
@@ -40,3 +53,8 @@
     color: #ffffff;
   }
 // Slanted Headers
+
+// Bakground Image
+#party-bg{
+  position: absolute;
+}
