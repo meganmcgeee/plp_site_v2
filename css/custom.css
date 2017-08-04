@@ -1,0 +1,81 @@
+ body {
+  background-color: #FED245 !important;
+  max-width: 100%;
+}
+
+
+/* Top Navigation */
+.navbar-default{
+  background-color:#1C75BC;
+  padding-left: .5em;
+  font-size: 3.7em;
+}
+
+.navbar-default li{
+  padding-left: 1em;
+  padding-top: .5em;
+}
+
+/* Splash Hero */
+
+/* Image Responsivity  */
+
+.splash-hero{
+  height: 80em;
+  /* padding-bottom: 15em; */
+  min-height: 20%;
+  background: url("../img/plp_bg_splash.svg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-top: 20em;
+  
+}
+
+#logo{
+  /* width: 300px; */
+  height: 800px;
+  /* position: absolute; */
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  /* margin-top: -50px; */
+  /* z-index: 1;
+  position: absolute; */
+  /* padding-left: 35em; */
+  /* padding-top: 15em; */
+  /* height: 60%;
+  width: 60%;  */
+}
+
+#rough{
+  /* padding-top: 40em; */
+   padding-left: 5em; 
+  /* display: block;
+  position: absolute;   */
+  /* width: 40%; */
+
+ }  
+#tumble{
+  /* padding-top: 45em; */
+  /* padding-left: 60em;  */
+  /* position: absolute;
+  display: block; */
+  /* width: 60%; */
+}
+
+  .social-media{
+    font-size: 4em;
+    height: 5em;
+    width: 100%;
+    background-color: #1C75BC;
+    color: #ffffff;
+  }
+// Slanted Headers
+
+// Background Image
+#party-bg{
+  position: absolute;
+  z-index: 1;
+} 
