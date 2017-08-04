@@ -64,7 +64,10 @@
   display: block; */
   /* width: 60%; */
 }
-
+/*Social Media Icons  */
+svg text {
+  font-family: FontAwesome;
+}
   .social-media{
     font-size: 4em;
     height: 5em;
