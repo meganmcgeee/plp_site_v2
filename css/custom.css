@@ -1,6 +1,11 @@
  body {
-  background-color: #FED245 !important;
+  /* background-color: #FED245 !important; */
   max-width: 100%;
+  background-color: none;
+}
+
+html{
+  background: url('../img/party-bg.png');
 }
 
 
@@ -36,7 +41,7 @@
 
 #logo{
   /* width: 300px; */
-  height: 800px;
+  /* height: 800px; */
   /* position: absolute; */
   left: 50%;
   top: 50%;
@@ -72,9 +77,13 @@
     max-width: 100%;
 }
 /*Social Media Icons  */
-svg text {
-  font-family: FontAwesome;
-}
+
+ svg text {
+  font-family: 'Montserrat' sans-serif;
+  ;
+} 
+
+
   .social-media{
     font-size: 4em;
     height: 5em;
