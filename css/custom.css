@@ -1,23 +1,94 @@
- body {
-  /* background-color: #FED245 !important; */
-  max-width: 100%;
-  background-color: none;
+
+body{
+  background-color: #FED245;
 }
 
-html{
-  background: url('../img/party-bg.png');
-}
+  /*COntainter restyle  */
 
+  .container-fluid{
+    padding: 0px
 
+  }
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-md-1,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-sm-1,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-xs-1,
+  .col-xs-10,
+  .col-xs-11,
+  .col-xs-12,
+  .col-xs-2,
+  .col-xs-3,
+  .col-xs-4,
+  .col-xs-5,
+  .col-xs-6,
+  .col-xs-7,
+  .col-xs-8,
+  .col-xs-9{
+    padding: 0px;
+  }
 /* Top Navigation */
+
+/* .navbar.center .navbar-inner {
+  text-align: center;
+}
+
+.navbar.center .navbar-inner .nav {
+  display: inline-block;
+  float: none;
+} */
+
+.navbar{
+  margin-bottom: 0px;
+  float: none;
+}
+
+.navbar-nav{
+  float: none;
+}
 .navbar-default{
   background-color:#1C75BC;
-  padding-left: .5em;
-  font-size: 3.7em;
+   /* padding-left: 10%;  */
+  font-size: 2em;
+  padding-bottom: 0em;
+  height: 3em;
+  float: none;
 }
 
 .navbar-default li{
-  padding-left: 1em;
+  padding-left: 1%;
   padding-top: .5em;
 }
 
@@ -26,62 +97,54 @@ html{
 /* Image Responsivity  */
 
 .splash-hero{
-  height: 90em;
-  /* padding-bottom: 15em; */
-  min-height: 20%;
+  /* height: 90em; */
+   /* padding-bottom: 15em;  */
+  min-height: 30%;
+  min-width: 100%;
   background: url("../img/plp_bg_splash.svg") no-repeat center center fixed; 
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
+  -o-background-size: cover; */
   background-size: cover;
-  padding-top: 20em;
-  object-fit: cover;
+  /* padding-top: 20em; */
+  /* object-fit: cover; */
   
 }
 
-#logo{
-  /* width: 300px; */
-  /* height: 800px; */
-  /* position: absolute; */
-  left: 50%;
-  top: 50%;
-  margin-left: -300px;
-  /* width: 30%; */
-  max-width: 100%;
-  /* margin-top: -50px; */
-  /* z-index: 1;
-  position: absolute; */
-  /* padding-left: 35em; */
-  /* padding-top: 15em; */
-   /* height: 60%;
-  width: 60%;   */
-   /* width: 40%;
-   max-width: 100%; */
+
+/* About Page Splash */
+.splash-hero-about{
+    height: 80%;
+     padding-bottom: 25em; 
+    min-height: 70%;
+    background: url("../img/plp_bg_splash.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 1em;
+    object-fit: cover;
+}
+#splash-logo{
+    max-width: 100%; 
+   max-height: 100%;
+   padding-top: 8em;
 }
 
-#rough{
-  /* padding-top: 40em; */
-   padding-left: 15em; 
-  /* display: block;
-  position: absolute;   */
-   width: 40%; 
-   max-width: 100%;
+#rough {
+  position: absolute;
+  width: 40%;
+  margin-left: 5em;
+}
 
- }  
-#tumble{
-  /* padding-top: 45em; */
-  /* padding-left: 60em;  */
-  /* position: absolute;
-  display: block; */
-    width: 30%;
-    max-width: 100%;
+#tumble {
+  position: absolute;
+  width: 40%;
+  text-align: right;
+   margin-left: 40%; 
 }
 /*Social Media Icons  */
 
- svg text {
-  font-family: 'Montserrat' sans-serif;
-  ;
-} 
 
 
   .social-media{
@@ -98,3 +161,15 @@ html{
   position: absolute;
   z-index: 1;
 } 
+
+/*Gallery  */
+.gallery{
+  padding-top: 10%;
+  padding-bottom: 20%;
+}
+.thumbnail{
+  margin-bottom: 0px;
+  padding: 0px;
+  border-radius: 0px;
+  border: none;
+}
