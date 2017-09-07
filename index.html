@@ -143,7 +143,10 @@
       <!-- <div class="container">
         <img id="lightning-bg" src="./img/bolt-bg.jpg" class="thumbnail img-responsive"></div>
       </div> -->
-
+    <div class="row">
+      <div class="col-xs-12" id="posts">
+      </div>
+    </div>
     <!-- Footer  -->
     <footer class="navbar navbar-default navbar-fixed-bottom">
       <div class="container">
@@ -157,5 +160,28 @@
         </div>
       </div>
     </footer>
+    <script>
+      // This function is executed when the page is ready to be manipulated.
+      $(() => {
+
+        // Get the div where we'll be rendering the post data.
+        $postsRenderTarget = $('#posts');
+
+        // Query the WordPress API for the posts.
+        $.getJSON('http://powerlevelproductions.com/wp-json/wp/v2/posts', posts => {
+
+          // Format the data into HTML.
+          const output = `
+            <ul>
+              <p>Post titles:</p>
+              ${posts.map(post => `<li>${post.title.rendered}</li>`)}
+            </ul>
+          `;
+
+          // Insert the HTML into the render target.
+          $postsRenderTarget.html(output);
+        });
+      })
+    </script>
   </body>
 </html>
