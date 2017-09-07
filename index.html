@@ -79,9 +79,9 @@
     </div> -->
    
     <div class="row">
-      <svg viewBox="50 0 150 40" id="desc-bar">
+      <svg viewbox="50 0 150 40" id="desc-bar">
         <filter id="dropshadow" height="100%">
-        <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
+        <feoffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
         </filter>
         <polygon points="0,0 200,20 0,3000 0,400" fill="#1C75BC" filter="url(#dropshadow)"/>
           <text fill="white" font-family="Montserrat, sans-serif" x="60" y="30" font-size="3.5">
@@ -124,15 +124,19 @@
       </div>
     </div>
     <!--Services Description Bar  -->
-      <svg viewBox="50 0 200 100">
-        <filter id="dropshadow" height="100%">
-        <feOffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
-
+    <svg viewbox="0 0 200 200">
+      <filter id="dropshadow-lower" height="175%">
+        <fegaussianblur in="SourceAlpha" stddeviation="5"/> <!-- stdDeviation is how much to blur -->
+        <feoffset dx="" dy="2" result="offsetblur"/> <!-- how much to offset -->
+        <femerge>
+          <femergenode/> <!-- this contains the offset blurred image -->
+          <femergenode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+        </femerge>
       </filter>
-      <polygon points="0,0 0,100 0,45 700,0" fill="#1C75BC" filter="url(#dropshadow)"/>
-        <text fill="white" x="60" y="25" font-size="3.5">We make pop-culture fan events and brand experiences fantastic and fan-nomenal. <br><a href="upcoming.html">Check out our events.</a>
-        </text>
-      </svg>
+      <polygon points="0,0 0,50 200,22  200,0" fill="#1C75BC" filter="url(#dropshadow-lower)"/>
+      <text fill="white" x="15" y="20" text-anchor="left" font-size="3.5">We make pop-culture fan events and brand experiences fantastic and fan-nomenal. </text>
+    </svg>
+
       <!--Lightning BG  -->
       <!-- <div class="container">
         <img id="lightning-bg" src="./img/bolt-bg.jpg" class="thumbnail img-responsive"></div>

@@ -3,12 +3,17 @@ body{
   background-color: #FED245;
 }
 
-  /*COntainter restyle  */
-
+  /* Container restyle  */
   .container-fluid{
     padding: 0px
-
   }
+
+  /* Remove negative margins from rows */
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .col-lg-1,
   .col-lg-10,
   .col-lg-11,
@@ -154,9 +159,19 @@ body{
     background-color: #1C75BC;
     color: #ffffff;
   }
-// Slanted Headers
 
-// Background Image
+/* Slanted Headers */
+svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+polygon {
+  min-width: 100% !important;
+}
+
+/* Background Image */
 #party-bg{
   position: absolute;
   z-index: 1;
