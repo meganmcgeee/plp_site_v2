@@ -124,18 +124,20 @@
       </div>
     </div>
     <!--Services Description Bar  -->
-    <svg viewbox="0 0 200 200">
-      <filter id="dropshadow-lower" height="175%">
-        <fegaussianblur in="SourceAlpha" stddeviation="5"/> <!-- stdDeviation is how much to blur -->
-        <feoffset dx="" dy="2" result="offsetblur"/> <!-- how much to offset -->
-        <femerge>
-          <femergenode/> <!-- this contains the offset blurred image -->
-          <femergenode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
-        </femerge>
-      </filter>
-      <polygon points="0,0 0,50 200,22  200,0" fill="#1C75BC" filter="url(#dropshadow-lower)"/>
-      <text fill="white" x="15" y="20" text-anchor="left" font-size="3.5">We make pop-culture fan events and brand experiences fantastic and fan-nomenal. </text>
-    </svg>
+    <div class="row">
+      <svg viewbox="0 0 200 60">
+        <filter id="dropshadow-lower" height="175%">
+          <fegaussianblur in="SourceAlpha" stddeviation="5"/> <!-- stdDeviation is how much to blur -->
+          <feoffset dx="" dy="2" result="offsetblur"/> <!-- how much to offset -->
+          <femerge>
+            <femergenode/> <!-- this contains the offset blurred image -->
+            <femergenode in="SourceGraphic"/> <!-- this contains the element that the filter is applied to -->
+          </femerge>
+        </filter>
+        <polygon points="0,0 0,50 200,22  200,0" fill="#1C75BC" filter="url(#dropshadow-lower)"/>
+        <text fill="white" x="15" y="20" text-anchor="left" font-size="3.5">We make pop-culture fan events and brand experiences fantastic and fan-nomenal. </text>
+      </svg>
+    </div>
 
       <!--Lightning BG  -->
       <!-- <div class="container">
@@ -143,19 +145,17 @@
       </div> -->
 
     <!-- Footer  -->
-      <footer>
-        <div class="navbar navbar-default navbar-fixed-bottom">
-          <div class="container">
-            <div class="navbar-collapse collapse" id="footer-body">
-                <ul class="nav navbar-nav">
-                  <li><a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                  <li><a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                  <li><a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                  <li><a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-          </div>
+    <footer class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container">
+        <div class="navbar-collapse collapse" id="footer-body">
+            <ul class="nav navbar-nav">
+              <li><a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+            </ul>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>

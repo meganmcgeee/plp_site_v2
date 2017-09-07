@@ -1,6 +1,7 @@
 
 body{
   background-color: #FED245;
+  margin-bottom: 8.5rem;
 }
 
   /* Container restyle  */
@@ -88,13 +89,13 @@ body{
    /* padding-left: 10%;  */
   font-size: 2em;
   padding-bottom: 0em;
-  height: 3em;
+  height: 3rem;
   float: none;
 }
 
 .navbar-default li{
   padding-left: 1%;
-  padding-top: .5em;
+  padding-top: .5rem;
 }
 
 /* Splash Hero */
@@ -222,4 +223,8 @@ polygon {
 }
 .navbar-collapse.in{
   background-color: #1C75BC;
+}
+
+.navbar-bottom {
+  height: 8rem;
 }
