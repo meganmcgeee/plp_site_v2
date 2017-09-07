@@ -173,3 +173,38 @@ body{
   border-radius: 0px;
   border: none;
 }
+
+/*Menu coloring  */
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+  color: #fff;
+  /*Sets the text hover color on navbar*/
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+  color: white;
+  /*BACKGROUND color for active*/
+  background-color: #1C75BC;
+}
+
+.navbar-default {
+  background-color: #1C75BC;
+  border-color: #1C75BC;
+}
+
+.navbar-default .navbar-nav>li>a:focus,
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+  background-color: #1C75BC;
+}
+
+.dropdown .dropdown-menu {
+  background-color: #1C75BC;
+}
+.navbar-collapse.in{
+  background-color: #1C75BC;
+}
