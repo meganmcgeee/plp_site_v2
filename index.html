@@ -30,8 +30,6 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
-    <!--Contact Form Funcitonality  -->
-    <script src="js/contact.js"></script>
     <!--Navigation Bar  -->
       <nav class="navbar navbar-default navbar-fixed-top">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -83,7 +81,7 @@
         <feoffset dx="2" dy="2" result="offsetblur"/> <!-- how much to offset -->
         </filter>
         <polygon points="0,0 200,20 0,3000 0,400" fill="#1C75BC" filter="url(#dropshadow)"/>
-          <text fill="white" font-family="Montserrat, sans-serif" x="60" y="30" font-size="3.5">
+          <text id="posts" fill="white" font-family="Montserrat, sans-serif" x="60" y="30" font-size="3.5">
             Power Level Productions is an experiential marketing firm for fandom.</text>          
       </svg>
     </div>
@@ -171,9 +169,8 @@
           //   <ul>
           //     <p>Post titles:</p>
           //     ${posts.map(post => `<li>${post.title.rendered}</li>`)}
-          //   </ul>
-          // `;
-          const output = "Testing, testing";
+         
+          const output = "Text From Wordpress";
 
           // Insert the HTML into the render target.
           $postsRenderTarget.html(output);
