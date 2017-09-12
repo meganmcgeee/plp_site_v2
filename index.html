@@ -164,7 +164,7 @@
         // Query the WordPress API for the posts.
         $.getJSON('http://powerlevelproductions.com/wp-json/wp/v2/posts', posts => {
           const firstPostTitle = posts[0].title.rendered;
-          const output = `The first post is ${firstPostTitle}`;
+          const output = `${firstPostTitle}`;
 
           // Insert the HTML into the render target.
           $postsRenderTarget.html(output);
