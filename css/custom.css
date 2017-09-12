@@ -161,12 +161,19 @@ body{
     color: #ffffff;
   }
 
-/* Posts section */
-.posts {
+/* Posts & description sections */
+.posts,
+.description {
   background: #1C75BC;
   color: #fff;
   font-size: 3.5rem;
   padding: 2em 1em;
+}
+
+/* This margin is temporary, to create enough space below the section that you 
+   can see the slanted edge. Remove it if/when there's actual content below. */
+.description {
+  margin-bottom: 200px;
 }
 
 /* Slanted Headers */
@@ -176,18 +183,28 @@ body{
   z-index: 1;
 }
 
-.slanted:before {
+.slanted.after:after,
+.slanted.before:before {  
   background: inherit;
-  top: 0;
   content: '';
   display: block;
   height: 50%;
   left: 0;
   position: absolute;
   right: 0;
+  z-index: -1;
+}
+
+.slanted.before:before {
+  top: 0;
   transform: skewY(1.5deg);
   transform-origin: 100% 0;
-  z-index: -1;
+}
+
+.slanted.after:after {
+  bottom: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
 }
 
 svg {
