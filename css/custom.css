@@ -87,7 +87,7 @@ body{
 .navbar-default{
   background-color:#3293d0;
    /* padding-left: 10%;  */
-  font-size: 2em;
+  /* font-size: 2em; */
   padding-bottom: 0em;
   height: 3rem;
   float: none;
@@ -140,7 +140,7 @@ body{
 #rough {
   position: absolute;
    width: 30%; 
-  margin-left: 5em;
+  margin-left: 2em;
 }
 
 #tumble {
@@ -288,4 +288,22 @@ polygon {
   margin-bottom: 2em;
   font-size: 3em;
   color: white;
+}
+
+/*Navbar Logo  */
+.navbar-brand img {
+  height: 100%;
+  padding-left: 10%;
+  padding-right: 70%;
+  
+}
+
+.nav >li >a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 2em;
+}
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
 }
