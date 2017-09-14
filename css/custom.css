@@ -85,7 +85,7 @@ body{
   float: none;
 }
 .navbar-default{
-  background-color:#1C75BC;
+  background-color:#3293d0;
    /* padding-left: 10%;  */
   font-size: 2em;
   padding-bottom: 0em;
@@ -121,7 +121,7 @@ body{
 /* About Page Splash */
 .splash-hero-about{
     height: 80%;
-     padding-bottom: 25em; 
+     /* padding-bottom: 25em;  */
     min-height: 70%;
     background: url("../img/plp_bg_splash.svg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -139,13 +139,13 @@ body{
 
 #rough {
   position: absolute;
-  width: 40%;
+   width: 30%; 
   margin-left: 5em;
 }
 
 #tumble {
   position: absolute;
-  width: 40%;
+  width: 30%;
   text-align: right;
    margin-left: 40%; 
 }
@@ -153,18 +153,11 @@ body{
 
 
 
-  .social-media{
-    font-size: 4em;
-    height: 5em;
-    width: 100%;
-    background-color: #1C75BC;
-    color: #ffffff;
-  }
 
 /* Posts & description sections */
 .posts,
 .description {
-  background: #1C75BC;
+  background: #3293d0;
   color: #fff;
   font-size: 3.5rem;
   padding: 2em 1em;
@@ -248,26 +241,26 @@ polygon {
 .navbar-default .navbar-nav>.active>a:focus {
   color: white;
   /*BACKGROUND color for active*/
-  background-color: #1C75BC;
+  background-color: #3293d0;
 }
 
 .navbar-default {
-  background-color: #1C75BC;
-  border-color: #1C75BC;
+  background-color: #3293d0;
+  border-color: #3293d0;
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-  background-color: #1C75BC;
+  background-color: #3293d0;
 }
 
 .dropdown .dropdown-menu {
-  background-color: #1C75BC;
+  background-color: #3293d0;
 }
 .navbar-collapse.in{
-  background-color: #1C75BC;
+  background-color: #3293d0;
 }
 
 .navbar-bottom {
@@ -278,6 +271,21 @@ polygon {
 
 
 .well, lengend{
-  background-color: #1C75BC;
+  background-color: #3293d0;
   color: #ffffff;
+}
+
+.info{
+  /* display: block; */
+  margin: center;
+  text-align: center;
+  border: 2px solid white;
+  height: 10%;
+  width: 80%; 
+  padding: 1.5em;
+  border-radius: 20px;
+  background-color: #3293d0;
+  margin-bottom: 2em;
+  font-size: 3em;
+  color: white;
 }
