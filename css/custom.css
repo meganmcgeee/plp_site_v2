@@ -3,6 +3,15 @@ body{
   background-color: #FED245;
   margin-bottom: 8.5rem;
 }
+/*make mobile fonts resize  */
+@media only screen and (max-width: 320px) {
+
+   body { 
+      font-size: 2em; 
+   }
+
+}
+
 
   /* Container restyle  */
   .container-fluid{
@@ -139,8 +148,8 @@ body{
 
 #rough {
   position: absolute;
-   width: 30%; 
-  margin-left: 2em;
+   width: 28%; 
+  margin-left: 1em;
 }
 
 #tumble {
@@ -276,7 +285,6 @@ polygon {
 }
 
 .info{
-  /* display: block; */
   margin: center;
   text-align: center;
   border: 2px solid white;
@@ -286,22 +294,29 @@ polygon {
   border-radius: 20px;
   background-color: #3293d0;
   margin-bottom: 2em;
+  margin-top: 0;
   font-size: 3em;
   color: white;
 }
 
+.info p{
+  display: inline;
+}
+
 /*Navbar Logo  */
 .navbar-brand img {
-  height: 100%;
-  padding-left: 10%;
-  padding-right: 70%;
+  height: 70px;
+  max-width: 100%;
+  /* padding-left: 10%;
+  padding-right: 70%; */
   
 }
 
 .nav >li >a {
+  padding: 0;
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 .navbar-toggle {
   padding: 10px;
