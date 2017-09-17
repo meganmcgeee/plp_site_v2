@@ -154,9 +154,9 @@ body{
 
 #tumble {
   position: absolute;
-  width: 30%;
+  width: 28%;
   text-align: right;
-   margin-left: 40%; 
+   margin-left: 70%; 
 }
 /*Social Media Icons  */
 
@@ -286,11 +286,11 @@ polygon {
 
 .info{
   margin: center;
-  text-align: center;
+  /* text-align: center; */
   border: 2px solid white;
   height: 10%;
-  width: 80%; 
-  padding: 1.5em;
+  width: 70%; 
+  padding: 1em;
   border-radius: 20px;
   background-color: #3293d0;
   margin-bottom: 2em;
