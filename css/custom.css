@@ -1,15 +1,31 @@
 
 body{
-  background-color: #FED245;
+  background-color: #FBF17A;
   margin-bottom: 8.5rem;
 }
 /*make mobile fonts resize  */
-@media only screen and (max-width: 320px) {
+@media all and (max-width: 1200px) {
+  /* screen size until 1200px */
+  body {
+    font-size: 1.5em;
+    /* 1.5x default size */
+  }
+}
 
-   body { 
-      font-size: 2em; 
-   }
+@media all and (max-width: 1000px) {
+  /* screen size until 1000px */
+  body {
+    font-size: 1.2em;
+    /* 1.2x default size */
+  }
+}
 
+@media all and (max-width: 500px) {
+  /* screen size until 500px */
+  body {
+    font-size: 0.5em;
+    /* 0.8x default size */
+  }
 }
 
 
@@ -97,9 +113,10 @@ body{
   background-color:#3293d0;
    /* padding-left: 10%;  */
   /* font-size: 2em; */
-  padding-bottom: 0em;
+  /* padding-bottom: 2em; */
   height: 3rem;
   float: none;
+  padding: 3%;
 }
 
 .navbar-default li{
@@ -107,6 +124,18 @@ body{
   padding-top: .5rem;
 }
 
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form{
+  border-color: #3293d0;
+}
+/*Hamburger menu customization  */
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover{
+  background-color: #3293d0;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #ffffff;
+}
 /* Splash Hero */
 
 /* Image Responsivity  */
@@ -141,22 +170,24 @@ body{
     object-fit: cover;
 }
 #splash-logo{
-    max-width: 100%; 
-   max-height: 100%;
-   padding-top: 8em;
+  max-width: 100%; 
+  max-height: 100%;
+  padding-top: 8em;
 }
 
 #rough {
   position: absolute;
-   width: 28%; 
+  width: 28%; 
   margin-left: 1em;
+  z-index: 1;
 }
 
 #tumble {
   position: absolute;
   width: 28%;
   text-align: right;
-   margin-left: 70%; 
+  margin-left: 70%;
+  z-index: 1;
 }
 /*Social Media Icons  */
 
@@ -168,8 +199,8 @@ body{
 .description {
   background: #3293d0;
   color: #fff;
-  font-size: 3.5rem;
-  padding: 2em 1em;
+  font-size: 3rem;
+  padding: 1em 1em;
 }
 
 /* This margin is temporary, to create enough space below the section that you 
@@ -251,11 +282,13 @@ polygon {
   color: white;
   /*BACKGROUND color for active*/
   background-color: #3293d0;
+  z-index: 2;
 }
 
 .navbar-default {
   background-color: #3293d0;
   border-color: #3293d0;
+   height: 10%; 
 }
 
 .navbar-default .navbar-nav>li>a:focus,
@@ -267,9 +300,12 @@ polygon {
 
 .dropdown .dropdown-menu {
   background-color: #3293d0;
+    z-index: 2;
 }
 .navbar-collapse.in{
   background-color: #3293d0;
+  position: relative;
+  z-index: 10000;
 }
 
 .navbar-bottom {
@@ -287,11 +323,11 @@ polygon {
 .info{
   margin: center;
   /* text-align: center; */
-  border: 2px solid white;
+  border: 7px solid #FEE600;
   height: 10%;
   width: 70%; 
   padding: 1em;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   background-color: #3293d0;
   margin-bottom: 2em;
   margin-top: 0;
@@ -305,8 +341,8 @@ polygon {
 
 /*Navbar Logo  */
 .navbar-brand img {
-  height: 70px;
-  max-width: 100%;
+   height: 65px;
+  max-width: 100%; 
   /* padding-left: 10%;
   padding-right: 70%; */
   
@@ -321,4 +357,52 @@ polygon {
 .navbar-toggle {
   padding: 10px;
   margin: 25px 15px 25px 0;
+}
+
+/* Forms */
+ label{
+   font-size: 2em;
+   margin-right: 1em;
+   padding-bottom: 3em;
+ }
+.input-group-addon{
+  background-color:#3293d0;
+  color: #fff;
+}
+.form-control{
+  color:#3293d0;
+}
+
+
+/*Single Event Page Styles  */
+
+.event-photo-block{
+  height: 400px;
+  margin-bottom: 4em;
+}
+
+.event-info{
+    /* text-align: center; */
+
+     padding-top: 2em; 
+     padding-bottom: 2em;
+     padding-left: 3em;
+     margin-bottom: 3em;
+    /* border-radius: 20px; */
+ 
+    background-color: #3293d0; 
+    /* margin-bottom: 10em;
+    margin-top: 10em; */
+    font-size: 3em;
+    color: white;
+}
+
+.event-single-desc p{
+  font-size: 3em;
+  color: #3293d0;
+  padding-top: 1em;
+  text-align: right;
+}
+.container .event-single-desc{
+  padding-left: 10px;
 }
