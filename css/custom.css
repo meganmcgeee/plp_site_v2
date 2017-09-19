@@ -1,7 +1,7 @@
 
 body{
   background-color: #FBF17A;
-  margin-bottom: 8.5rem;
+  margin-bottom: 130px;
 }
 /*make mobile fonts resize  */
 @media all and (max-width: 1200px) {
@@ -404,4 +404,45 @@ polygon {
 }
 .container .event-single-desc{
   padding-left: 10px;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+  font-size: 3em;
+  color: white;
+  background-color: #3293d0;
+}
+
+.social-icons {
+  margin-top: 1.25em;
+  padding-left: 14rem;
+}
+  
+@media screen and (max-width: 500px) {
+  .social-icons {
+    font-size: 3rem;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.social-icons ul {
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons li:not(:last-of-type) {
+  padding-right: 1em;
+}
+
+.social-icons a {
+  color: inherit;
 }
