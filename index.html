@@ -134,17 +134,15 @@
       </div> -->
 
     <!-- Footer  -->
-    <footer class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-        <div class="navbar-collapse collapse" id="footer-body">
-            <ul class="nav navbar-nav">
-              <li><a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-      </div>
+    <footer class="footer">
+      <nav class="social-icons">
+        <ul>
+          <li><a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
     </footer>
     <script>
       // This function is executed when the page is ready to be manipulated.
@@ -165,7 +163,8 @@
           $postsRenderTarget.html(output);
         });
       })
-            // This function is executed when the page is ready to be manipulated.
+      
+      // This function is executed when the page is ready to be manipulated.
       $(() => {
         // Get the div where we'll be rendering the post data.
         $postsRenderTarget = $('.posts');
@@ -177,6 +176,7 @@
           // Insert the HTML into the render target.
           $postsRenderTarget.html(output);
         });
+      });
     </script>
   </body>
 </html>
