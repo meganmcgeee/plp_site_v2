@@ -1,6 +1,6 @@
 
 body{
-  background-color: #FBF17A;
+  background-color: #ffffff;
   margin-bottom: 130px;
 }
 /*make mobile fonts resize  */
@@ -106,20 +106,27 @@ body{
   float: none;
 }
 
+.navbar-default .navbar-nav>li>a{
+  color:#3293d0;
+}
 .navbar-nav{
   float: none;
 }
 .navbar-default{
-  background-color:#3293d0;
+  background-color:#ffffff;
    /* padding-left: 10%;  */
   /* font-size: 2em; */
   /* padding-bottom: 2em; */
   height: 3rem;
   float: none;
-  padding: 3%;
+  padding: 1em;
+  height: 5%;
+  border-bottom-width: 2.5em;
+  border-bottom-color: #3293d0;
 }
 
 .navbar-default li{
+
   padding-left: 1%;
   padding-top: .5rem;
 }
@@ -131,7 +138,8 @@ body{
 /*Hamburger menu customization  */
 .navbar-default .navbar-toggle:focus,
 .navbar-default .navbar-toggle:hover{
-  background-color: #3293d0;
+  background-color: #ffffff;
+  ;
 }
 .navbar-default .navbar-toggle .icon-bar{
   background-color: #ffffff;
@@ -145,7 +153,7 @@ body{
    /* padding-bottom: 15em;  */
   min-height: 30%;
   min-width: 100%;
-  background: url("../img/plp_bg_splash.svg") no-repeat center center fixed; 
+  background: url("../img/plp_bg_splash.png") no-repeat center center fixed; 
   /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover; */
@@ -161,7 +169,7 @@ body{
     height: 80%;
      /* padding-bottom: 25em;  */
     min-height: 70%;
-    background: url("../img/plp_bg_splash.svg") no-repeat center center fixed;
+    background: url("../img/plp_bg_splash.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -172,14 +180,15 @@ body{
 #splash-logo{
   max-width: 100%; 
   max-height: 100%;
-  padding-top: 8em;
+  padding-top: 1em;
+  margin-bottom: 2em;
 }
 
 #rough {
   position: absolute;
-  width: 28%; 
+  width: 20%; 
   margin-left: 1em;
-  z-index: 1;
+  /* z-index: 1; */
 }
 
 #tumble {
@@ -272,7 +281,7 @@ polygon {
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-  color: #fff;
+  color: none;
   /*Sets the text hover color on navbar*/
 }
 
@@ -281,21 +290,21 @@ polygon {
 .navbar-default .navbar-nav>.active>a:focus {
   color: white;
   /*BACKGROUND color for active*/
-  background-color: #3293d0;
+  /* background-color: #3293d0; */
   z-index: 2;
 }
 
-.navbar-default {
+/* .navbar-default {
   background-color: #3293d0;
   border-color: #3293d0;
    height: 10%; 
-}
+} */
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-  background-color: #3293d0;
+  background-color: #ffffff;
 }
 
 .dropdown .dropdown-menu {
@@ -303,7 +312,7 @@ polygon {
     z-index: 2;
 }
 .navbar-collapse.in{
-  background-color: #3293d0;
+  background-color: #ffffff;
   position: relative;
   z-index: 10000;
 }
@@ -325,7 +334,7 @@ polygon {
   /* text-align: center; */
   border: 7px solid #FEE600;
   height: 10%;
-  width: 80%; 
+  width: 60%; 
   padding: 1em;
   /* border-radius: 20px; */
   background-color: #3293d0;
@@ -341,7 +350,7 @@ polygon {
 
 /*Navbar Logo  */
 .navbar-brand img {
-   height: 65px;
+  height: 80px;
   max-width: 100%; 
   /* padding-left: 10%;
   padding-right: 70%; */
@@ -414,10 +423,13 @@ polygon {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 130px;
+  height: 120px;
+  border-top-width: 2.5em;
+  border-top-color: #3293d0;
+  padding-bottom: 2em;
   font-size: 3em;
-  color: white;
-  background-color: #3293d0;
+  color: #3293d0;
+  background-color: #fff;
 }
 
 .social-icons {
@@ -447,4 +459,18 @@ polygon {
 
 .social-icons a {
   color: inherit;
+}
+
+h1{
+  font-size: 1em;
+}
+
+/*event page  */
+.img-wrapper{
+  position: relative;
+}
+
+.event-photo {
+  position: absolute;
+  margin-bottom: 10em;
 }
