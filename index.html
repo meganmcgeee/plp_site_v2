@@ -4,6 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pop culture brand experience productions for conventions. Strategy consulting for fans and growing fandom throught fan activations, parties, and consulting.">
+    <meta name=“robots” content=“follow”>
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@powerlevelpro" />
+    <meta name="twitter:title" content="Small Island Developing States Photo Submission" />
+    <meta name="twitter:description" content="Pop culture brand experience productions for conventions. Strategy consulting for fans and growing fandom throught fan activations, parties, and consulting." />
+    <meta name="twitter:image" content="https://farm6.staticflickr.com/5510/14338202952_93595258ff_z.jpg" />
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Power Level Productions</title>
     <!-- CSS -->
@@ -23,44 +30,47 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  </head>
-  <body>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
+  </head>
+  <body>
+
     <!--Navigation Bar  -->
-      <nav class="navbar navbar-default navbar-fixed-top">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-          </button>
-          <a href="#" class="navbar-brand">
-            <!-- <img alt="Brand" src="./img/lightning-bolt.png">  -->
-          </a>
-        </div>
-        <!-- Collection of nav links and other content for toggling -->
-        <div id="navbarCollapse" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="past.html">PAST EVENTS</a></li>
-            <li><a href="upcoming.html">UPCOMING</a></li>
-            <li><a href="services.html">SERVICES</a></li>
-            <li><a href="contact.html">CONTACT</a></li>
-          </ul>
-        </div>
-      </nav>
+      <div class="bs-example">
+        <nav class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>  
+            <a href="index.html" class=" img-responsive navbar-brand">
+               <img alt="Power Level Productions" class="img-responsive" src="./img/powerlevelproductions-logo.png">  
+            </a>
+          </div>
+          <!-- Collection of nav links and other content for toggling -->
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <!-- <li><a href="index.html">HOME</a></li> -->
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="past.html">OUR EVENTS</a></li>
+              <!-- <li><a href="upcoming.html">UPCOMING</a></li> -->
+              <li><a href="services.html">SERVICES</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     <!--Splash Hero-->
     <div class="container-fluid"> 
       <div class="row justify-content-md-center">
         <div class="splash-hero">
-          <img id="splash-logo" src="./img/splash-img.png" alt="">
+          <a href="about.html"><img id="splash-logo" src="./img/splash-img.png" alt=""></a>
       </div>
     </div>
   </div>
@@ -75,65 +85,54 @@
       </svg>
     </div> -->
    
-    <div class="slanted before posts">
+      <svg viewBox="50 0 200 30">
+        <filter id="dropshadow" height="100%">
+          <feOffset dx="2" dy="2" result="offsetblur" />
+          <!-- how much to offset -->
+        </filter>
+        <polygon points="0,0 0,50 0,30 700,0" fill="#3293d0" filter="url(#dropshadow)" />
+        <text fill="white" x="55" y="15" font-size="7" font-weight="bold">
+         FAN EXPERIENCE PRODUCTION FOR POP-CULTURE
+        </text>
+      </svg>
+
     </div>
 
 
     <!-- Photo Gallery Block  -->
-    <div class="row">
-      <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="./img/fa-rel.jpg" class="thumbnail img-responsive">
+    <div class="row event-photo-block">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <a href="past.html">
+          <img src="./img/FAP-img-1.jpg" class="thumbnail img-responsive">
         </a>
       </div>
-      <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="./img/fxzl.jpg" class="thumbnail img-responsive">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <a href="past.html">
+          <img src="./img/FAP-img-2.jpg" class="thumbnail img-responsive">
         </a>
       </div>
-      <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="./img/fap.jpg" class="thumbnail img-responsive">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <a href="past.html">
+          <img src="./img/FAP-img-3.jpg" class="thumbnail img-responsive">
         </a>
       </div>
-      <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="./img/fap-3.jpg" class="thumbnail img-responsive">
-        </a>
-      </div>
-      <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a href="#">
-             <img src="./img/fap-1.jpg" class="thumbnail img-responsive">
-        </a>
-      </div>
-      <div class="col-lg-6 col-sm-6 col-xs-12">
-        <a href="#">
-          <img src="./img/fxzl-1917.jpg" class="thumbnail img-responsive">
-        </a>
-      </div>
-    </div>
-    <!--Services Description Bar  -->
-    <div class="slanted after description">
-      We make pop-culture fan events and brand experiences fantastic and fan-nomenal.
     </div>
 
       <!--Lightning BG  -->
-      <!-- <div class="container">
+       <!-- <div class="container">
         <img id="lightning-bg" src="./img/bolt-bg.jpg" class="thumbnail img-responsive"></div>
-      </div> -->
+      </div>  -->
 
     <!-- Footer  -->
-    <footer class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-        <div class="navbar-collapse collapse" id="footer-body">
-            <ul class="nav navbar-nav">
-              <li><a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-              <li><a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-              <li><a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-              <li><a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
-            </ul>
-        </div>
-      </div>
+    <footer class="footer">
+      <nav class="social-icons">
+        <ul>
+          <li><a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li><a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+          <li><a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li><a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+        </ul>
+      </nav>
     </footer>
     <script>
       // This function is executed when the page is ready to be manipulated.
@@ -145,15 +144,29 @@
         // Query the WordPress API for the posts.
         $.getJSON('http://powerlevelproductions.com/wp-json/wp/v2/posts', posts => {
           const output = `
-            <ul>
-              ${posts.map(post => `<li>${post.title.rendered}</li>`)}
-            </ul>
+            <p>
+              ${posts.map(post => `${post.rendered}`)}
+            </p>
           `;
 
           // Insert the HTML into the render target.
           $postsRenderTarget.html(output);
         });
       })
+      
+      // This function is executed when the page is ready to be manipulated.
+      $(() => {
+        // Get the div where we'll be rendering the post data.
+        $postsRenderTarget = $('.posts');
+        // Query the WordPress API for the posts.
+        $.getJSON('http://powerlevelproductions.com/wp-json/wp/v2/posts', posts => {
+          const firstPost = posts[0].title.rendered;
+          
+          const output = `The first post is ${firstPost}`;
+          // Insert the HTML into the render target.
+          $postsRenderTarget.html(output);
+        });
+      });
     </script>
   </body>
 </html>

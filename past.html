@@ -37,56 +37,60 @@
 
   <!-- Full photo background  -->
   <!--Navigation Bar  -->
-  <div class="bs-example">
-    <nav class="navbar navbar-default">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+    <!--Navigation Bar  -->
+      <div class="bs-example">
+        <nav class="navbar navbar-default">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-        <a href="#" class="navbar-brand">
-          <!-- <img alt="Brand" src="./img/lightning-bolt.png">  -->
-        </a>
+            <a href="#" class="navbar-brand">
+               <img alt="Brand" src="./img/powerlevelproductions-logo.png">   
+            </a>
+          </div>
+          <!-- Collection of nav links and other content for toggling -->
+          <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+              <!-- <li><a href="index.html">HOME</a></li> -->
+              <li><a href="about.html">ABOUT</a></li>
+              <li><a href="past.html">OUR EVENTS</a></li>
+              <!-- <li><a href="upcoming.html">UPCOMING</a></li> -->
+              <li><a href="services.html">SERVICES</a></li>
+              <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <!-- Collection of nav links and other content for toggling -->
-      <div id="navbarCollapse" class="collapse navbar-collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="past.html">PAST EVENTS</a></li>
-          <li><a href="upcoming.html">UPCOMING</a></li>
-          <li><a href="services.html">SERVICES</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
   <!--Splash Hero-->
   <div class="row">
     <div class="splash-hero-about container-fluid">
-      <img id="rough" src="./img/rough-blue-outline.png" alt="">
-      <svg viewBox="50 0 200 100">
+      <img id="rough" class="img-responsive " src="./img/tumble-blue-outline.png" alt="">
+      <svg viewBox="50 0 200 65">
         <filter id="dropshadow" height="100%">
           <feOffset dx="2" dy="2" result="offsetblur" />
           <!-- how much to offset -->
         </filter>
-        <polygon points="0,0 0,100 0,45 700,0" fill="#1C75BC" filter="url(#dropshadow)" />
-        <text fill="white" x="125" y="25" font-size="15">PAST EVENTS</a>
+        <polygon points="0,0 0,100 0,45 700,0" fill="#3293d0" filter="url(#dropshadow)" />
+        <text fill="white" x="105" y="25" font-size="15" font-style="italic">OUR EVENTS</a>
         </text>
       </svg>
-      <img id="tumble" src="./img/tumble-blue-outline.png" alt="">
-      <svg viewBox="50 0 200 100">
+      <div class="container-fluid info pull-right">
+        <p>Power Level Productions designs and produces fan experiences that engage and excite.</p>
+      </div>
+      <!-- <img id="tumble" src="./img/tumble-blue-outline.png" alt=""> -->
+      <!-- <svg viewBox="50 0 200 100">
         <filter id="dropshadow" height="100%">
           <feOffset dx="2" dy="2" result="offsetblur" />
           <!-- how much to offset -->
-        </filter>
+        <!-- </filter>
         <polygon points="0,0 0,50 0,45 700,0" fill="#1C75BC" filter="url(#dropshadow)" />
         <text fill="white" x="60" y="25" font-size="10">OUR WORK</a>
         </text>
-      </svg>
+      </svg> -->
     </div>
   </div>
 
@@ -95,62 +99,65 @@
   <!-- Photo Gallery Block  -->
   <!-- Photo Gallery Block  -->
   <div class="row">
-
+  <!--Fakku Rooftop Party  -->
     <div class="col-lg-6 col-sm-6 col-xs-12">
-      <svg viewBox="50 0 200 45">
-        <filter id="dropshadow" height="100%">
-          <feOffset dx="2" dy="2" result="offsetblur" />
-          <!-- how much to offset -->
-        </filter>
-        <polygon points="0,0 0,50 0,45 700,0" fill="#1C75BC" filter="url(#dropshadow)" />
-        <text fill="white" x="60" y="25" font-size="7">FAKKU ROOFTOP PARTY</a>
-        </text>
-      </svg>
-      <a href="past-single.html">
-        <img src="img/event-img-4.png" class="thumbnail img-responsive">
+      <a href="events/fakku-rooftop-party.html">
+        <svg viewBox="50 0 200 45">
+          <filter id="dropshadow" height="100%">
+            <feOffset dx="2" dy="2" result="offsetblur" />
+            <!-- how much to offset -->
+          </filter>
+          <polygon points="0,0 0,50 0,45 700,0" fill="#1C75BC" filter="url(#dropshadow)" />
+          <text fill="white" x="60" y="25" font-size="7" font-style="italic">FAKKU ROOFTOP PARTY</a>
+          </text>
+        </svg>
+        <img src="img/fap-img-1.jpg" class="thumbnail img-responsive">
+      </a>
+    </div>
+    <!-- Lightning Lot -->
+    <div class="col-lg-6 col-sm-6 col-md-6 col-xs-12">
+      <a href="events/lightning-lot.html">
+        <svg viewBox="50 0 200 45">
+          <filter id="dropshadow" height="100%">
+            <feOffset dx="2" dy="2" result="offsetblur" />
+            <!-- how much to offset -->
+          </filter>
+          <polygon points="0,0 0,50 0,45 700,0" fill="#3293d0" filter="url(#dropshadow)" />
+          <text fill="white" x="60" y="25" font-size="7" font-style="italic">LIGHTNING LOT</a>
+          </text>
+        </svg>
+        <img src="img/lit-lot-img-1.jpg" class="thumbnail img-responsive">
+      </a>
+    </div>
+    <!--Fakku x Zoom Lens  -->
+       
+    <div class="col-lg-6 col-sm-6 col-xs-12">
+      <a href="events/fakku-zoomlens-release-party.html">
+        <svg viewBox="50 0 200 45">
+          <filter id="dropshadow" height="100%">
+            <feOffset dx="2" dy="2" result="offsetblur" />
+            <!-- how much to offset -->
+          </filter>
+          <polygon points="0,0 0,50 0,45 700,0" fill="#3293d0" filter="url(#dropshadow)" />
+          <text fill="white" x="60" y="25" font-size="7" font-style="italic">FAKKU X ZOOM LENS RELEASE PARTY</a>
+          </text>
+        </svg>
+          <img src="img/FxZL-img-2.jpg" class="thumbnail img-responsive">
       </a>
     </div>
     <div class="col-lg-6 col-sm-6 col-xs-12">
-      <svg viewBox="50 0 200 45">
-        <filter id="dropshadow" height="100%">
-          <feOffset dx="2" dy="2" result="offsetblur" />
-          <!-- how much to offset -->
-        </filter>
-        <polygon points="0,0 0,50 0,45 700,0" fill="#FFC31F" filter="url(#dropshadow)" />
-        <text fill="white" x="60" y="25" font-size="7">LIGHTNING LOT</a>
-        </text>
-      </svg>
-      <a href="#">
-              <img src="img/event-img-2.png" class="thumbnail img-responsive">
-          </a>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-      <svg viewBox="50 0 200 45">
-        <filter id="dropshadow" height="100%">
-          <feOffset dx="2" dy="2" result="offsetblur" />
-          <!-- how much to offset -->
-        </filter>
-        <polygon points="0,0 0,50 0,45 700,0" fill="#FFC31F" filter="url(#dropshadow)" />
-        <text fill="white" x="60" y="25" font-size="7">FAKKU X ZOOM LENS RELEASE PARTY</a>
-        </text>
-      </svg>
-      <a href="#">
-              <img src="img/event-img-3.png" class="thumbnail img-responsive">
-          </a>
-    </div>
-    <div class="col-lg-6 col-sm-6 col-xs-12">
-      <svg viewBox="50 0 200 45">
-        <filter id="dropshadow" height="100%">
-          <feOffset dx="2" dy="2" result="offsetblur" />
-          <!-- how much to offset -->
-        </filter>
-        <polygon points="0,0 0,50 0,45 700,0" fill="#1C75BC" filter="url(#dropshadow)" />
-        <text fill="white" x="60" y="25" font-size="7">ANIME NEWS NETWORK INDUSTRY PARTY
-        </text>
-      </svg>
-      <a href="#">
-              <img src="img/event-img-1.png" class="thumbnail img-responsive">
-          </a>
+      <a href="events/anime-news-network-industry-party.html">
+        <svg viewBox="50 0 200 45">
+          <filter id="dropshadow" height="100%">
+            <feOffset dx="2" dy="2" result="offsetblur" />
+            <!-- how much to offset -->
+          </filter>
+          <polygon points="0,0 0,50 0,45 700,0" fill="#3293d0" filter="url(#dropshadow)" />
+          <text fill="white" x="60" y="25" font-size="7" font-style="italic">ANIME NEWS NETWORK INDUSTRY PARTY
+          </text>
+        </svg>
+        <img src="img/ann-img-1.jpg" class="thumbnail img-responsive">
+      </a>
     </div>
   </div>
 
@@ -160,19 +167,15 @@
       </div> -->
 
   <!-- Footer  -->
-  <footer>
-    <div class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container">
-        <div class="navbar-collapse collapse" id="footer-body">
-          <ul class="nav navbar-nav">
-            <li><a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-            <li><a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-            <li><a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-            <li><a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
+  <footer class="footer">
+    <nav class="social-icons">
+      <ul>
+        <li><a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+      </ul>
+    </nav>
   </footer>
 </body>
 

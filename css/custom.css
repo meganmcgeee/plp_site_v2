@@ -1,8 +1,33 @@
 
 body{
-  background-color: #FED245;
-  margin-bottom: 8.5rem;
+  background-color: #FBF17A;
+  margin-bottom: 130px;
 }
+/*make mobile fonts resize  */
+@media all and (max-width: 1200px) {
+  /* screen size until 1200px */
+  body {
+    font-size: 1.5em;
+    /* 1.5x default size */
+  }
+}
+
+@media all and (max-width: 1000px) {
+  /* screen size until 1000px */
+  body {
+    font-size: 1.2em;
+    /* 1.2x default size */
+  }
+}
+
+@media all and (max-width: 500px) {
+  /* screen size until 500px */
+  body {
+    font-size: 0.5em;
+    /* 0.8x default size */
+  }
+}
+
 
   /* Container restyle  */
   .container-fluid{
@@ -85,12 +110,13 @@ body{
   float: none;
 }
 .navbar-default{
-  background-color:#1C75BC;
+  background-color:#3293d0;
    /* padding-left: 10%;  */
-  font-size: 2em;
-  padding-bottom: 0em;
+  /* font-size: 2em; */
+  /* padding-bottom: 2em; */
   height: 3rem;
   float: none;
+  padding: 3%;
 }
 
 .navbar-default li{
@@ -98,6 +124,18 @@ body{
   padding-top: .5rem;
 }
 
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form{
+  border-color: #3293d0;
+}
+/*Hamburger menu customization  */
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover{
+  background-color: #3293d0;
+}
+.navbar-default .navbar-toggle .icon-bar{
+  background-color: #ffffff;
+}
 /* Splash Hero */
 
 /* Image Responsivity  */
@@ -121,7 +159,7 @@ body{
 /* About Page Splash */
 .splash-hero-about{
     height: 80%;
-     padding-bottom: 25em; 
+     /* padding-bottom: 25em;  */
     min-height: 70%;
     background: url("../img/plp_bg_splash.svg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -132,42 +170,37 @@ body{
     object-fit: cover;
 }
 #splash-logo{
-    max-width: 100%; 
-   max-height: 100%;
-   padding-top: 8em;
+  max-width: 100%; 
+  max-height: 100%;
+  padding-top: 8em;
 }
 
 #rough {
   position: absolute;
-  width: 40%;
-  margin-left: 5em;
+  width: 28%; 
+  margin-left: 1em;
+  z-index: 1;
 }
 
 #tumble {
   position: absolute;
-  width: 40%;
+  width: 28%;
   text-align: right;
-   margin-left: 40%; 
+  margin-left: 70%;
+  z-index: 1;
 }
 /*Social Media Icons  */
 
 
 
-  .social-media{
-    font-size: 4em;
-    height: 5em;
-    width: 100%;
-    background-color: #1C75BC;
-    color: #ffffff;
-  }
 
 /* Posts & description sections */
 .posts,
 .description {
-  background: #1C75BC;
+  background: #3293d0;
   color: #fff;
-  font-size: 3.5rem;
-  padding: 2em 1em;
+  font-size: 3rem;
+  padding: 1em 1em;
 }
 
 /* This margin is temporary, to create enough space below the section that you 
@@ -248,26 +281,31 @@ polygon {
 .navbar-default .navbar-nav>.active>a:focus {
   color: white;
   /*BACKGROUND color for active*/
-  background-color: #1C75BC;
+  background-color: #3293d0;
+  z-index: 2;
 }
 
 .navbar-default {
-  background-color: #1C75BC;
-  border-color: #1C75BC;
+  background-color: #3293d0;
+  border-color: #3293d0;
+   height: 10%; 
 }
 
 .navbar-default .navbar-nav>li>a:focus,
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus,
 .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
-  background-color: #1C75BC;
+  background-color: #3293d0;
 }
 
 .dropdown .dropdown-menu {
-  background-color: #1C75BC;
+  background-color: #3293d0;
+    z-index: 2;
 }
 .navbar-collapse.in{
-  background-color: #1C75BC;
+  background-color: #3293d0;
+  position: relative;
+  z-index: 10000;
 }
 
 .navbar-bottom {
@@ -278,6 +316,135 @@ polygon {
 
 
 .well, lengend{
-  background-color: #1C75BC;
+  background-color: #3293d0;
   color: #ffffff;
+}
+
+.info{
+  margin: center;
+  /* text-align: center; */
+  border: 7px solid #FEE600;
+  height: 10%;
+  width: 80%; 
+  padding: 1em;
+  /* border-radius: 20px; */
+  background-color: #3293d0;
+  margin-bottom: 2em;
+  margin-top: 0;
+   font-size: 2em; 
+  color: white;
+}
+
+.info p{
+  display: inline;
+}
+
+/*Navbar Logo  */
+.navbar-brand img {
+   height: 65px;
+  max-width: 100%; 
+  /* padding-left: 10%;
+  padding-right: 70%; */
+  
+}
+
+.nav >li >a {
+  padding: 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 1em;
+}
+.navbar-toggle {
+  padding: 10px;
+  margin: 25px 15px 25px 0;
+}
+
+/* Forms */
+ label{
+   font-size: 2em;
+   margin-right: 1em;
+   padding-bottom: 3em;
+ }
+.input-group-addon{
+  background-color:#3293d0;
+  color: #fff;
+}
+.form-control{
+  color:#3293d0;
+}
+
+
+/*Single Event Page Styles  */
+
+.event-photo-block{
+  margin-bottom: 4em;
+}
+
+.event-info{
+/* text-align: center; */
+
+  padding-top: 2em; 
+  padding-bottom: 2em;
+  padding-left: 3em;
+  margin-bottom: 3em;
+/* border-radius: 20px; */
+
+  background-color: #3293d0; 
+  /* margin-bottom: 10em;
+  margin-top: 10em; */
+  font-size: 3em;
+  color: white;
+}
+
+.event-single-desc p{
+  font-size: 3em;
+  color: #3293d0;
+  padding-top: 1em;
+  text-align: left;
+  padding-left: 2em;
+}
+.container .event-single-desc{
+  padding-left: 10px;
+  text-align: left;
+}
+/* Footer */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 130px;
+  font-size: 3em;
+  color: white;
+  background-color: #3293d0;
+}
+
+.social-icons {
+  margin-top: 1.25em;
+  padding-left: 14rem;
+}
+
+@media screen and (max-width: 500px) {
+  .social-icons {
+    font-size: 3rem;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.social-icons ul {
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+}
+
+.social-icons li:not(:last-of-type) {
+  padding-right: 1em;
+}
+
+.social-icons a {
+  color: inherit;
 }
