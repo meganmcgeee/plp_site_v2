@@ -1,6 +1,6 @@
 
 body{
-  background-color: #FEE600;
+  background-color: #fff57d;
   margin-bottom: 130px;
 }
 /*make mobile fonts resize  */
@@ -130,7 +130,9 @@ body{
   padding-left: 1%;
   padding-top: .5rem;
 }
-
+  .navbar-default .navbar-toggle {
+  border-color: #3293d0;
+}
 /* Navbar collapses on portrait tablets  */
 @media (max-width: 1456px) {
   .navbar-header {
@@ -181,7 +183,7 @@ body{
   ;
 }
 .navbar-default .navbar-toggle .icon-bar{
-  background-color: #ffffff;
+  background-color: #3293d0;
 }
 /* Splash Hero */
 
@@ -364,10 +366,22 @@ polygon {
 
 
 .well, lengend{
-  background-color: #3293d0;
+  background-color: #ffffff;
   color: #ffffff;
+  padding: 5em;
 }
 
+.input-group .form-control{
+  z-index: 0;
+  padding: 2em;
+  width: 100%;
+}
+
+.form-horizontal{
+  max-width: 100%;
+}
+
+/*Info Box Styling  */
 .info{
   margin: center;
   /* text-align: center; */
@@ -389,7 +403,7 @@ polygon {
 
 /*Navbar Logo  */
 .navbar-brand img {
-  height: 80px;
+  height: 50px;
   max-width: 100%; 
   /* padding-left: 10%;
   padding-right: 70%; */
@@ -462,23 +476,24 @@ polygon {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 120px;
-  border-top-width: 2.5em;
+  height: 100px;
+  border-top:5em;
   border-top-color: #3293d0;
   padding-bottom: 2em;
   font-size: 3em;
   color: #3293d0;
   background-color: #fff;
+  border-top: 2em solid #3293d0;
 }
 
 .social-icons {
-  margin-top: 1.25em;
+  margin-top: .3em;
   padding-left: 14rem;
 }
 
 @media screen and (max-width: 500px) {
   .social-icons {
-    font-size: 3rem;
+    font-size: 2rem;
     padding-left: 0;
     text-align: center;
   }
