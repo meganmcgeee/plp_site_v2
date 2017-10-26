@@ -134,7 +134,7 @@ body{
   border-color: #3293d0;
 }
 /* Navbar collapses on portrait tablets  */
-@media (max-width: 1456px) {
+@media (max-width: 1200px) {
   .navbar-header {
     float: none;
   }
@@ -229,7 +229,7 @@ body{
   position: absolute;
   width: 20%; 
   margin-left: 1em;
-   z-index: 0; 
+   z-index: 3; 
 }
 
 #tumble {
