@@ -35,29 +35,59 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
-          <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+        <!--Social tags -->
+    <!-- Twitter Card data -->
+    <meta name="twitter:title" content="Power Level Productions">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:creator" content="@powerlevelpro">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="roughtumble.png">
+    
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Power Level Productions is a fan experience production firm that serves events and brands with a fandom." />
+    <meta property="og:type" content="business" />
+    <meta property="og:url" content="www.powerlevelproductions.com" />
+    <meta property="og:image" content="roughtumble.png" />
+    <meta property="og:description" content="Power Level Productions is a fan experience production firm that serves events and brands with a fandom."
+    />
+    <meta property="og:site_name" content="Power Level Productions" />
+    <meta property="article:published_time" content="2017-11-26T05:59:00+01:00" />
+    <meta property="article:modified_time" content="2017-11-26T19:08:47+01:00" />
+    <meta property="article:section" content="Article Section" />
+    <meta property="article:tag" content="events" />
+    <meta property="fb:admins" content="Facebook numberic ID" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110538955-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110538955-1');
+    </script>
   </head>
   <body>
 
     <!--Navigation Bar  -->
-      <div class="bs-example">
+      <!-- <div class="bs-example"> -->
         <nav class="navbar navbar-default">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -67,7 +97,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>  
-            <a href="index.html" class="navbar-brand">
+            <a href="index.htm" class="navbar-brand">
                <img alt="Power Level Productions" class="img-responsive" src="./img/lightning-bolt.png" width="50" height="50">  
             </a>
           </div>
@@ -109,11 +139,10 @@
           <!-- how much to offset -->
         </filter>
         <polygon points="0,0 0,50 0,30 700,0" fill="#3293d0" filter="url(#dropshadow)" />
-        <text fill="white" x="55" y="15" font-size="7" font-weight="bold" font-style="italic">
+        <text fill="white" x="60" y="15" font-size="6.5" font-weight="bold" font-style="italic">
           FAN EXPERIENCE PRODUCTION FOR POP-CULTURE
         </text>
       </svg>
-
     </div>
 
 
@@ -135,7 +164,23 @@
         </a>
       </div>
     </div>
-
+    <!-- <div class="row event-photo-block">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <a href="past.html">
+          <img src="./img/FAP-img-1.jpg" class="thumbnail img-responsive">
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <a href="past.html">
+          <img src="./img/FAP-img-2.jpg" class="thumbnail img-responsive">
+        </a>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+        <a href="past.html">
+          <img src="./img/FAP-img-3.jpg" class="thumbnail img-responsive">
+        </a>
+      </div>
+    </div> -->
       <!--Lightning BG  -->
        <!-- <div class="container">
         <img id="lightning-bg" src="./img/bolt-bg.jpg" class="thumbnail img-responsive"></div>
@@ -145,14 +190,28 @@
     <footer class="footer">
       <nav class="social-icons">
         <ul>
-          <li><a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-          <li><a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-          <li><a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-          <li><a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a></li>
+          <li>
+            <a href="http://instagram.com/powerlevelpro"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="http://twitter.com/powerlevelpro"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="http://facebook.com/powerlevelpro"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="http://twitch.com/powerlevelpro"><i class="fa fa-twitch" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="terms-of-use.html">Terms</a>
+          </li>
+          <li>
+            <a href="privacy.html">Privacy</a>
+          </li>
         </ul>
       </nav>
     </footer>
-    <script>
+    <!-- <script>
       // This function is executed when the page is ready to be manipulated.
       $(() => {
 
@@ -185,6 +244,6 @@
           $postsRenderTarget.html(output);
         });
       });
-    </script>
+    </script> -->
   </body>
 </html>

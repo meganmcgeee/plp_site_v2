@@ -26,6 +26,9 @@ body{
     font-size: 0.5em;
     /* 0.8x default size */
   }
+  .staff-info{
+    padding: 1em;
+  }
 }
 
 
@@ -108,6 +111,7 @@ body{
 
 .navbar-default .navbar-nav>li>a{
   color:#3293d0;
+  
 }
 .navbar-nav{
   float: none;
@@ -116,19 +120,22 @@ body{
   background-color:#ffffff;
    /* padding-left: 10%;  */
   /* font-size: 2em; */
-  /* padding-bottom: 2em; */
+  padding-bottom: .5em;
+    font-size: 1.5em;
    /* height: 3rem;  */
   float: none;
   /* padding: 1em; */
    /* height: 5%;  */
   border-bottom-width: 1.25em;
   border-bottom-color: #3293d0;
+  min-height: .5em;
+  padding-top: 0;
 }
 
 .navbar-default li{
-
+/* 
   padding-left: 1%;
-  padding-top: .5rem;
+  padding-top: .5rem; */
 }
   .navbar-default .navbar-toggle {
   border-color: #3293d0;
@@ -150,7 +157,7 @@ body{
   }
   .navbar-nav {
     float: none!important;
-    margin: 7.5px -15px;
+    /* margin: 7.5px -15px; */
   }
   .navbar-nav>li {
     float: none;
@@ -209,7 +216,7 @@ body{
 .splash-hero-about{
     height: 80%;
      /* padding-bottom: 25em;  */
-    min-height: 70%;
+    min-height: 20%;
     background: url("../img/plp_bg_splash.png") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -219,17 +226,17 @@ body{
     object-fit: cover;
 }
 #splash-logo{
-  max-width: 100%; 
-  max-height: 100%;
-  padding-top: 1em;
-  margin-bottom: 2em;
+  max-width: 80%; 
+  /* padding-top: 1em; */
+  margin-left: 10%;
+  margin-bottom: 1em;
 }
 
 #rough {
   position: absolute;
-  width: 20%; 
-  margin-left: 1em;
+  width: 17%; 
    z-index: 3; 
+   transform: rotateX(-20deg);
 }
 
 #tumble {
@@ -362,6 +369,9 @@ polygon {
   height: 8rem;
 }
 
+.nav{
+  padding-top: .3em;
+}
 /* Contact Form  */
 
 
@@ -387,13 +397,13 @@ polygon {
   /* text-align: center; */
   border: 7px solid #FEE600;
   height: 10%;
-  width: 60%; 
+  width: 70%; 
   padding: 1em;
   /* border-radius: 20px; */
   background-color: #3293d0;
-  margin-bottom: 2em;
+  margin-bottom: 2.5em;
   margin-top: 0;
-   font-size: 2em; 
+  font-size: 2.5em; 
   color: white;
 }
 
@@ -410,6 +420,9 @@ polygon {
   
 }
 
+.info h2{
+  font-size: 1.5em;
+}
 .nav >li >a {
   padding: 0;
   padding-top: 30px;
@@ -447,19 +460,20 @@ polygon {
 
   padding-top: 2em; 
   padding-bottom: 2em;
-  padding-left: 3em;
+  padding-left: 2em;
+  padding-right: 1em;
   margin-bottom: 3em;
 /* border-radius: 20px; */
 
   background-color: #3293d0; 
   /* margin-bottom: 10em;
   margin-top: 10em; */
-  font-size: 3em;
+  font-size: 3.5em;
   color: white;
 }
 
 .event-single-desc p{
-  font-size: 3em;
+  /* font-size: 3em; */
   color: #3293d0;
   padding-top: 1em;
   text-align: left;
@@ -470,14 +484,16 @@ polygon {
   text-align: left;
 }
 /* Footer */
-
+.singlebutton{
+  margin-left: 1em;
+}
 .footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   height: 100px;
-  border-top: 1.25em;
+  border-top: .75em;
   border-top-color: #3293d0;
   padding-bottom: 2em;
   font-size: 3em;
@@ -487,14 +503,16 @@ polygon {
 }
 
 .social-icons {
-  margin-top: .3em;
+  margin-top: .7em;
   padding-left: 14rem;
+  font-size: .7em;
 }
 
 @media screen and (max-width: 500px) {
   .social-icons {
     font-size: 2rem;
     padding-left: 0;
+    padding-top: 1em;
     text-align: center;
   }
 }
@@ -547,4 +565,19 @@ h1{
 }
 .well{
   border: none;
+}
+
+/* staff pages */
+
+.staff-info{
+  font-size: 15px;
+  padding: 6em;
+}
+/* 
+Button */
+
+
+#singlebutton{
+  background-color: #3293d0;
+  padding: 1.5em;
 }
